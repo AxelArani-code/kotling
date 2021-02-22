@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "691066718109",
+    "project_id": "datefire-63428",
+    "storage_bucket": "datefire-63428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691066718109:android:59fafdd690ac7a87815174",
+        "android_client_info": {
+          "package_name": "com.example.datefire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691066718109-618s1s08mpfmgn8ilt1e1mg8lvk7fr8b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQBqKy6uWFLRPa-XKJbH32lAc_rS0K_jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691066718109-618s1s08mpfmgn8ilt1e1mg8lvk7fr8b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

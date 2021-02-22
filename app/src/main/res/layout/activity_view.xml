@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomShetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:src="@drawable/img_logo" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:layout_gravity="left"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bolditalic"
+                android:text="Te"
+                android:textColor="#FF9800"
+                android:textSize="24dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/roboto_bolditalic"
+                android:text="Recomendamos"
+                android:textColor="#fff"
+                android:textSize="24dp"
+
+                />
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="346dp"
+            android:clipToPadding="false"
+            android:foregroundGravity="center"
+            android:overScrollMode="never">
+
+
+        </androidx.viewpager.widget.ViewPager>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="439dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bottom_sheet_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/Image_Bebidas"
+                    android:layout_width="123dp"
+                    android:layout_height="192dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+
+                    android:src="@drawable/img_descuento_1"
+                    app:riv_corner_radius="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="186dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/list_name_Bebidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comida mas llevada que hay"
+                        android:textColor="@color/colorPrimaryText"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/list_descrp_Bebidas"
+                        android:layout_width="match_parent"
+                        android:layout_height="139dp"
+                        android:text="Free Deliveri"
+                        android:textColor="@color/colorSecondatyText"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/money" />
+
+                        <TextView
+                            android:id="@+id/Presio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5125"
+                            android:textColor="@color/design_default_color_error"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_favorite_"
+                    app:tint="@color/colorSecondatyText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Add To Favore"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_baseline_share_24"
+                    app:tint="@color/colorSecondatyText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Compartir Producto"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/botton_bg"
+                android:text="Compartir"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+</LinearLayout>
